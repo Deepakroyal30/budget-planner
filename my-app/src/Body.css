@@ -1,0 +1,52 @@
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 99%;
+    flex-direction: column;
+}
+.imge {
+    background: url('https://plus.unsplash.com/premium_photo-1661351467380-949c3e8589c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    width: 98%;
+    margin: 0 auto;
+    height: 650px;
+  }
+  .colorContainer{
+    background-color: brown;
+    height: 200px;
+    color: white;
+    width: 98%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .buttonCo {
+    width: 350px;
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  
+  .buttonCo button {
+    background-color: transparent; /* Set background color to blue */
+    color: white; /* Set text color to white for better visibility */
+    border: 1px solid white; /* Remove border */
+    padding: 5px 10px; /* Add padding for better appearance */
+  }
+  .par{
+    width: 98%;
+    background-color: rgba(98, 104, 110, 0.669);
+    margin:0 auto;
+    padding-left: 20px;
+    text-align: left;
+  }
+  .details{
+    text-align: center;
+  }
+  .details h1 {
+    color: brown;
+  }
+
+  
+  

@@ -1,0 +1,32 @@
+.Header{
+    padding: 25px;
+}
+.Header h1{
+    color: brown;
+}
+.Header h6{
+    color: lightgrey;
+}
+
+nav{
+    width: 90%;
+    margin:0 auto;
+    background-color: lightgrey;
+    color: white;
+
+}
+nav:first-child{
+    background-color: brown;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+}
+.active{
+    width: 150px;
+    background-color: brown;
+    text-align: center;
+}
