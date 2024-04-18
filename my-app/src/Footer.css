@@ -1,12 +1,94 @@
-.footer{
-    padding: 50px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.copy{
-    background-color: grey;
-    text-align: center;
-    color: brown;
-}
-.footer h6{
-    text-align: center;
 
+.footer {
+    background-color: #f3f4f6;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.logo3 {
+    height: 2rem;
+    background-color: transparent;
+    color: white;
+}
+.footercontent {
+    margin: 136px auto; /* Center the footer content horizontally */
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items vertically */
+}
+
+.parag {
+    text-align: center; /* Center align the paragraph */
+    margin-top: 40px;
+    width: 60%;
+}
+
+ul.about {
+    text-decoration: none;
+    display: flex; /* Change to flex */
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 0; /* Remove default padding */
+}
+
+ul.about li {
+    margin-right: 4rem;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 600;
+}
+
+ul.about li:last-child {
+    margin-right: 0;
+}
+
+ul.about li a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 14px;
+}
+
+ul.about li a:hover {
+    color: #6b7280;
+}
+.socialmedia {
+    display: flex; /* Make the ul horizontal */
+    justify-content: center; /* Center align the items */
+    list-style-type: none;
+    padding: 0; /* Remove default padding */
+}
+
+.socialmedia li {
+    margin-right: 3rem; /* Adjust margin between items */
+}
+
+.socialmedia li:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+.socialmedia a {
+    text-decoration: none;
+    color: #4b5563;
+}
+
+.socialmedia a:hover {
+    color: #6b7280;
+}
+
+.socialmedia svg {
+    width: 20px; 
+    height: 20px;
+    vertical-align: middle; 
 }
