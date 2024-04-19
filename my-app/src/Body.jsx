@@ -1,41 +1,32 @@
-import React, { useState } from 'react';
-import data from './data.json';
+import React from 'react';
 import './Body.css';
 
-function Body() {
-  const [numParagraphs, setNumParagraphs] = useState(1);
-  const [generatedParagraphs, setGeneratedParagraphs] = useState([]);
+function Body(props) {
+  const { data2 } = props;
 
-  function generateParagraphs() {
-    const selectedData = data.data;
-    const paragraphs = [];
-
-    for (let i = 0; i < numParagraphs; i++) {
-      const paragraphSet = selectedData[i];
-      const keys = Object.keys(paragraphSet);
-      const paragraph = paragraphSet[keys[0]];
-      paragraphs.push(paragraph);
-    }
-
-    setGeneratedParagraphs(paragraphs);
-  }
+  const renderMovies = () => {
+    return data2.map((movie, index) => {
+      const movieData = Object.values(movie)[0];
+      return (
+        <div key={index} className="movie">
+          <div className="image-container">
+            <img src={movieData.imageurls} alt={movieData.moviename} />
+            <div className="movie-details">
+              <h2>{movieData.moviename}</h2>
+              <p><h3>Release Year:</h3> {movieData.releaseyears}</p>
+              <p><h3>Duration:</h3>{movieData.duration}</p>
+              <p><h3>Genres:</h3> {movieData.genres}</p>
+              <p><h3>Description:</h3> {movieData["movie description"]}</p>
+            </div>
+          </div>
+        </div>
+      );
+    });
+  };
 
   return (
     <div className='main'>
-      <h1 className='heading'>TIRED OF BORING LOREM IPSUM?</h1>
-      <label htmlFor="para">Number of Paragraphs:</label>
-      <input
-        type="number"
-        name="para"
-        id="para"
-        value={numParagraphs}
-        onChange={e => setNumParagraphs(parseInt(e.target.value))}
-      />
-      <button className='gen' onClick={generateParagraphs}>GENERATE</button>
-      
-      {generatedParagraphs.map((paragraph, index) => (
-        <p className='ans' key={index}>{paragraph}</p>
-      ))}
+      {renderMovies()}
     </div>
   );
 }
