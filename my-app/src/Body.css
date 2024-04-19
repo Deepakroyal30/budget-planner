@@ -1,166 +1,31 @@
-section {
-  position: relative;
-  width: 100%;
-  margin-bottom: 50px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-section img {
-  width: 100%;
-  height: 99.5vh;
-}
-
-.Heading {
-  position: absolute;
-  left: 30%;
-  font-size: xx-large;
-  top: 30%;
-  transform: translateX(-50%);
-  width: 500px;
-  color: red;
-}
-.para2{
-  position: absolute;
-  left: 27%;
-  width:400px;
-  font-size: large;
-  color: beige;
-  top: 55%;
-  transform: translateX(-50%);
-
-}
-.buttons{
-  position: absolute;
-  left: 25%;
-  width:400px;
-  display: flex;
-  justify-content: space-between;
-  font-size: large;
-  color: beige;
-  width: 350px;
-  top: 65%;
-  transform: translateX(-50%);
- 
-}
-.first{
-  background-color: rgb(225,29,72);
-  border: none;
-  height: 50px;
-  color: whitesmoke;
-  font-size: large;
-  cursor: pointer;
-  width:150px;
-  transition: all 0.3s ease-in-out;
-}
-.first:hover{
-  background-color:  rgba(225, 29, 71, 0.76);
-}
-.second{
-  background-color:white ;
-  border: none;
-  height: 50px;
-  cursor: pointer;
-  color:rgb(225,29,72) ;
-  font-size: large;
-  width:150px;
-}.boxco {
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
-  justify-content: space-between;
-  height: 88vh;
-  position: relative;
-  margin-bottom: 300px; /* Add position relative to create a positioning context */
-}
-
-.left {
-  width: 54%;
-  height: 100%;
-  padding: 10px;
-  position: absolute;
-  top: 17%;
-  left: 0;
-  z-index: 1; 
-}
-
-.left img {
-  width: 100%;
-  height: 100%;
-}
-
-.right {
-  width: 45%;
-  height: 100%;
-  position: absolute;
-  left: 50%;
-  padding-left: 200px;
-  z-index: 0;
-  background-color: rgb(243, 244, 246);
-}
-.bold{
-  margin-top: 100px;
-  font-weight: bold;
-  font-size: xx-large;
-}
-.light{
-  width: 450px;
-  font-weight: 100;
-  font-style: initial;
-}
-.getin{
-  height: 50px;
-  color: white;
-  width: 150px;
-  background-color: rgb(79,70,229);
-  border-radius: 5px;
-  border: none;
-  font-size: medium;
-}
-.getin:hover{
-  color: rgb(79,70,229);
-  background-color: transparent;
-  border: 0.5px solid rgb(79,70,229);
-}.magazineco {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px; 
-  width: 98%;
-  margin: 0 auto; /* Centering the container */
-  height: 700px;
-}
-
-.one aside {
-  height: 336px;
-  width: 224px;
-  margin: 0 auto;
-  border-radius: 20px;
-  box-shadow: -4px 2px 10px 2px rgba(0, 0, 0, 0.378);
-}
-
-.one {
-  background-color: rgb(249, 250, 251);
+.main{
+  background-color: ivory;
+  height: 100vh;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; 
-  justify-self: center; 
-  width: 450px;
 }
 
-.ceo {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto; 
+.heading
+{
+  color: brown;
 }
 
-.ceo img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+.ans {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
 }
-
-.ceo h6,
-.ceo p {
-  margin: 5px 0; /* Add some margin to the heading and paragraph for spacing */
+.gen{
+  background-color: #F5873D;
+  color:white;
+  font-size:small;
+  font-weight: 600;
+  border: none;
+  width: 120px;
+  border-radius: 3px;
+  height: 30px;
 }
