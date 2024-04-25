@@ -1,11 +1,12 @@
 
-import logo from './logo.svg';
 import './App.css';
-import LandingScreen from './LandingScreen';
+import Body from './Body';
 
 function App() {
   return (
-    <LandingScreen/>
+    <div>
+      <Body></Body>
+      </div>
   );
 }
 
