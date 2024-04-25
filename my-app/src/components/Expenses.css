@@ -1,0 +1,12 @@
+#expense_container, #expense_container>h2{
+    margin-bottom: 1rem;
+    color: rgb(218, 109, 7);
+    margin-left: 1rem;
+    margin-right: 2rem;
+    
+}
+#expense_container>h2{
+    color:rgb(237, 146, 8);
+    text-transform: uppercase;
+    margin-left: 38%;
+}

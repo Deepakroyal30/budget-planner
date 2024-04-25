@@ -1,0 +1,19 @@
+#container{
+    width: 50%;
+    height: 50%;
+    color: lightsalmon;
+    margin: 10% auto;
+    border:1.5px solid burlywood;
+    box-shadow: 4px 5px 5px 10px rgba(0, 0, 0, 0.367);
+    border-radius: 20px
+    
+    
+}
+#container>h1{
+    color: aquamarine;
+    margin-left: 25%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-top: 3rem;
+    
+}
